@@ -1,9 +1,9 @@
-# import numpy as np
+import numpy as np
 
 
-# arr = np.array([[1, 2, 3],
-#                 [4, 5, 6],
-#                 [7, 8, 9]])
+arr = np.array([[1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]])
 
 # print(arr[0, 1])  #20 (rows0, col 1)
 # print(arr[2, 2]) #90 (row 2, col 2)
@@ -18,4 +18,15 @@
 # slice_arr = arr[0, :2]
 # slice_arr[0] = 999 
 
-# print(arr)
+# print(arr[0])
+
+
+copy_arr = arr[1].copy()  #independent copy
+copy_arr[0] = 555
+print(arr[1])    # original unchanged
+
+# Random generator with seed (reproducibility)
+
+rng = np.random.default_rng(seed=42)
+nums = rng.integers(1, 10, size=5)
+print(nums)
