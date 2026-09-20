@@ -1,3 +1,5 @@
+# Some are the Examples of the Random Number Generation:
+
 import numpy as np
 
 # # Simulate 100k coin flips
