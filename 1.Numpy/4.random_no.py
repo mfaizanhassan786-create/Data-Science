@@ -1,4 +1,4 @@
-# Some are the Examples of the Random Number Generation:
+## Some are the Examples of the Random Number Generation:
 
 import numpy as np
 
