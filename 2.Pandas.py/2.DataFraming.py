@@ -1,19 +1,21 @@
+import os
 import pandas as pd
 
-data = {
-    "Name": ["faizan" , "Faizan", "Ali", "Hassan"],
-    "Age": [23, 24, 25, 27],
-    "City": ["Karachi", "Lahore", "Islamabad", "Multan"]
-}
+# data = {
+#     "Name": ["faizan" , "Faizan", "Ali", "Hassan"],
+#     "Age": [23, 24, 25, 27],
+#     "City": ["Karachi", "Lahore", "Islamabad", "Multan"]
+# }
 
-df = pd.DataFrame(data)
+# df = pd.DataFrame(data)
 
-print(df)
+# print(df)
 
 
 # # Load sample CSV file
 
-# df = pd.read_csv('retail_sales.csv')
+df = pd.read_csv('2.Pandas.py/3.retail_sales.csv')
+
 
 # # Inspect Data Frame
 # print('Info : \n', df.info())
