@@ -1,19 +1,19 @@
-import pandas as pd
+# import pandas as pd
 
 ## Creating a Series:
 
-s = pd.Series([1,2,3,4,5], index = ['a','b','c','d','e'])
+# s = pd.Series([1,2,3,4,5], index = ['a','b','c','d','e'])
 
-print(s)
+# # print(s)
 
-#Index vs values
+# # Index vs values
 
-print("Values:", s.values)
-print("Index:", s.index)
-print("Data Type:", s.dtype)
+# print("Values:", s.values)
+# print("Index:", s.index)
+# print("Data Type:", s.dtype)
 
-print(s.head)
-print(s.tail)
-
+# print(s.head)
+# print(s.tail)
+# print(s.value_counts() )
 
 
