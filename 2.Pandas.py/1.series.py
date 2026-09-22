@@ -32,3 +32,15 @@ import pandas as pd
 # print("\nAccess by label ('Math'):", s2['Math'])
 # print("Mean score:", s2.mean())
 # print("Scores greater than 90:\n", s2[s2 > 90])
+
+## Example 3: Handling Missing Data & Operations (e.g., Daily Store Sales)
+
+# sales_data = [120, 250, None, 180, 310]
+# days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
+# sales = pd.Series(sales_data, index=days, name="Weekly_Sales")
+
+# print("\nOriginal Sales Series:\n", sales)
+# print("\nCheck for null values:\n", sales.isnull())
+# print("\nFill missing value with average:\n", sales.fillna(sales.mean()))
+# print("\nTotal Sales (ignoring NaN):", sales.sum())
+# print("\nSorted by values descending:\n", sales.sort_values(ascending=False))
