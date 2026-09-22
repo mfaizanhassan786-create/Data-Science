@@ -18,17 +18,17 @@ import pandas as pd
 
 ## Another Example:
 
-# Creating a Series from a dictionary (e.g., student scores)
-scores = {
-    'Math': 95,
-    'Science': 88,
-    'English': 92,
-    'History': 85
-}
+# # Creating a Series from a dictionary (e.g., student scores)
+# scores = {
+#     'Math': 95,
+#     'Science': 88,
+#     'English': 92,
+#     'History': 85
+# }
 
-s2 = pd.Series(scores, name="Student_Scores")
+# s2 = pd.Series(scores, name="Student_Scores")
 
-print("Series from Dictionary:\n", s2)
-print("\nAccess by label ('Math'):", s2['Math'])
-print("Mean score:", s2.mean())
-print("Scores greater than 90:\n", s2[s2 > 90])
+# print("Series from Dictionary:\n", s2)
+# print("\nAccess by label ('Math'):", s2['Math'])
+# print("Mean score:", s2.mean())
+# print("Scores greater than 90:\n", s2[s2 > 90])
