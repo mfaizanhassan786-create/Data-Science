@@ -14,7 +14,7 @@
 
 # # # Load sample CSV file
 
-# df = pd.read_csv('2.Pandas.py/3.retail_sales.csv')
+# df = pd.read_csv('2.Pandas.py/3.Retail_sales.csv')
 
 
 # # # Inspect Data Frame
