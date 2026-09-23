@@ -44,3 +44,14 @@ import pandas as pd
 # print("\nFill missing value with average:\n", sales.fillna(sales.mean()))
 # print("\nTotal Sales (ignoring NaN):", sales.sum())
 # print("\nSorted by values descending:\n", sales.sort_values(ascending=False))
+
+## Example 4: String Operations & Custom Transformations (e.g., Product Inventory)
+
+# products = pd.Series(['  Laptop ', 'smartPHONE', 'TABLET', 'HeAdPhOnEs', 'smartwatch'], name="Gadgets")
+
+# print("\nOriginal Series:\n", products)
+# print("\nCleaned & Uppercase:\n", products.str.strip().str.upper())
+# print("\nCheck containing 'smart':\n", products.str.strip().str.lower().str.contains('smart'))
+
+# # Using .apply() with a custom function or lambda
+# print("\nCharacter counts:\n", products.str.strip().apply(len))
