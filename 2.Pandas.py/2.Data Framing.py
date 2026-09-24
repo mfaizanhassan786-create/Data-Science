@@ -28,3 +28,24 @@
 # print("\nNumber of rows and columns : \n" , (df.shape))
 
 
+# Example: Creating DataFrame from a list of dictionaries & adding calculated columns
+import pandas as pd
+
+employee_data = [
+    {"EmpID": 101, "Name": "Ayesha", "Department": "HR", "Salary": 60000},
+    {"EmpID": 102, "Name": "Bilal", "Department": "IT", "Salary": 85000},
+    {"EmpID": 103, "Name": "Hamza", "Department": "Finance", "Salary": 75000},
+    {"EmpID": 104, "Name": "Zainab", "Department": "IT", "Salary": 92000},
+]
+
+df_emp = pd.DataFrame(employee_data)
+
+# Adding derived/calculated columns
+df_emp["Bonus"] = df_emp["Salary"] * 0.10
+df_emp["Total_Comp"] = df_emp["Salary"] + df_emp["Bonus"]
+
+print("--- Employee DataFrame ---")
+print(df_emp)
+
+print("\n--- Filter (IT Department) ---")
+print(df_emp[df_emp["Department"] == "IT"])
