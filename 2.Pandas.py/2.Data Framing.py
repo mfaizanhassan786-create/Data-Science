@@ -28,7 +28,8 @@
 # print("\nNumber of rows and columns : \n" , (df.shape))
 
 
-# # Example: Creating DataFrame from a list of dictionaries & adding calculated columns
+# # Example: Creating DataFrame from a list of dictionaries & adding calculated columns:
+
 # import pandas as pd
 
 # employee_data = [
