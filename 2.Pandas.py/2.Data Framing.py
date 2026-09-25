@@ -1,5 +1,5 @@
-# import os
-# import pandas as pd
+import os
+import pandas as pd
 
 # # data = {
 # #     "Name": ["faizan" , "Faizan", "Ali", "Hassan"],
@@ -54,20 +54,20 @@
 
 # Example: Creating DataFrame with Custom Index & Accessing with loc / iloc:
 
-# scores_data = {
-#     "Math": [85, 92, 78, 90],
-#     "Science": [88, 95, 72, 89],
-#     "English": [79, 85, 88, 91]
-# }
-# students = ["Alice", "Bob", "Charlie", "David"]
+scores_data = {
+    "Math": [85, 92, 78, 90],
+    "Science": [88, 95, 72, 89],
+    "English": [79, 85, 88, 91]
+}
+students = ["Alice", "Bob", "Charlie", "David"]
 
-# df_scores = pd.DataFrame(scores_data, index=students)
+df_scores = pd.DataFrame(scores_data, index=students)
 
-# print("\n--- Student Scores (Custom Index) ---")
-# print(df_scores)
+print("\n--- Student Scores (Custom Index) ---")
+print(df_scores)
 
-# print("\n--- Access by label using .loc['Bob'] ---")
-# print(df_scores.loc["Bob"])
+print("\n--- Access by label using .loc['Bob'] ---")
+print(df_scores.loc["Bob"])
 
-# print("\n--- Access by integer position using .iloc[0:2] ---")
-# print(df_scores.iloc[0:2])
+print("\n--- Access by integer position using .iloc[0:2] ---")
+print(df_scores.iloc[0:2])
