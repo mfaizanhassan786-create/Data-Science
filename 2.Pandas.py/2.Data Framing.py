@@ -30,8 +30,6 @@ import pandas as pd
 
 # # Example: Creating DataFrame from a list of dictionaries & adding calculated columns:
 
-# import pandas as pd
-
 # employee_data = [
 #     {"EmpID": 101, "Name": "Ayesha", "Department": "HR", "Salary": 60000},
 #     {"EmpID": 102, "Name": "Bilal", "Department": "IT", "Salary": 85000},
