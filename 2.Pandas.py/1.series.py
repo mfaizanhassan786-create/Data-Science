@@ -56,12 +56,12 @@ import pandas as pd
 # # Using .apply() with a custom function or lambda
 # print("\nCharacter counts:\n", products.str.strip().apply(len))
 
-# Example 5: Time Series & Cumulative Operations (e.g., Daily Website Visitors)
+# # Example 5: Time Series & Cumulative Operations (e.g., Daily Website Visitors)
 
-dates = pd.date_range(start="2026-01-01", periods=6, freq="D")
-visitors = pd.Series([150, 200, 250, 220, 300, 450], index=dates, name="Website_Visitors")
+# dates = pd.date_range(start="2026-01-01", periods=6, freq="D")
+# visitors = pd.Series([150, 200, 250, 220, 300, 450], index=dates, name="Website_Visitors")
 
-print("\nTime Series Data:\n", visitors)
-print("\nCumulative Visitors (cumsum):\n", visitors.cumsum())
-print("\n3-Day Rolling Average:\n", visitors.rolling(window=3).mean())
-print("\nDay with Maximum Visitors:", visitors.idxmax(), "with", visitors.max(), "visitors")
+# print("\nTime Series Data:\n", visitors)
+# print("\nCumulative Visitors (cumsum):\n", visitors.cumsum())
+# print("\n3-Day Rolling Average:\n", visitors.rolling(window=3).mean())
+# print("\nDay with Maximum Visitors:", visitors.idxmax(), "with", visitors.max(), "visitors")
