@@ -65,3 +65,18 @@ import pandas as pd
 # print("\nCumulative Visitors (cumsum):\n", visitors.cumsum())
 # print("\n3-Day Rolling Average:\n", visitors.rolling(window=3).mean())
 # print("\nDay with Maximum Visitors:", visitors.idxmax(), "with", visitors.max(), "visitors")
+
+## Example 6: Categorical Mapping, Ranking & Conditions (e.g., Employee Performance)
+
+# ratings = pd.Series(['Good', 'Excellent', 'Average', 'Poor', 'Good', 'Excellent'], name="Performance")
+
+# # Mapping categories to numeric scores
+# grade_scale = {'Poor': 1, 'Average': 2, 'Good': 3, 'Excellent': 4}
+# numeric_scores = ratings.map(grade_scale)
+
+# print("\nCategorical Performance Ratings:\n", ratings)
+# print("\nMapped to Numeric Scores:\n", numeric_scores)
+# print("\nUnique Ratings:", ratings.unique())
+# print("\nRating Counts (normalized):\n", ratings.value_counts(normalize=True))
+# print("\nScore Ranks:\n", numeric_scores.rank(ascending=False))
+
