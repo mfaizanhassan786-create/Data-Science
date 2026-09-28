@@ -80,3 +80,22 @@ import pandas as pd
 # print("\nRating Counts (normalized):\n", ratings.value_counts(normalize=True))
 # print("\nScore Ranks:\n", numeric_scores.rank(ascending=False))
 
+## Example 7: Numeric Binning, Clipping & Conditional Replacement (e.g., Temperature Readings)
+
+# temps = pd.Series([15.5, 32.0, 41.2, 8.4, 25.0, 38.6, -2.0], name="Daily_Temperatures")
+
+# print("\nOriginal Temperatures:\n", temps)
+# # Binning continuous values into discrete intervals (pd.cut)
+# bins = [-10, 10, 25, 35, 50]
+# labels = ['Cold', 'Mild', 'Warm', 'Hot']
+# temp_categories = pd.cut(temps, bins=bins, labels=labels)
+# print("\nBinned Temperature Categories:\n", temp_categories)
+
+# # Clipping values within a specific range [min, max]
+# print("\nClipped between 0 and 35:\n", temps.clip(lower=0, upper=35))
+
+# # Conditional replacement using .where() / .mask()
+# # .where(condition, other): keeps values where condition is True, replaces others
+# print("\nKeep >= 20, else mark -999:\n", temps.where(temps >= 20, -999))
+
+
