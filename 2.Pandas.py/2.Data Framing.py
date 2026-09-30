@@ -69,3 +69,50 @@ import pandas as pd
 
 # print("\n--- Access by integer position using .iloc[0:2] ---")
 # print(df_scores.iloc[0:2])
+
+
+# # Example: GroupBy and Aggregation:
+
+# sales_data = {
+#     "Region": ["North", "South", "North", "West", "South", "West"],
+#     "Salesperson": ["Ali", "Sara", "Ahmed", "Fatima", "Bilal", "Zain"],
+#     "Sales": [25000, 34000, 18000, 42000, 29000, 31000],
+#     "Units": [50, 70, 35, 90, 60, 65]
+# }
+
+# df_sales = pd.DataFrame(sales_data)
+
+# print("\n--- Sales DataFrame ---")
+# print(df_sales)
+
+# # Group by Region with summary statistics
+# print("\n--- Total & Average Sales by Region ---")
+# print(df_sales.groupby("Region")[["Sales", "Units"]].agg(["sum", "mean"]))
+
+
+# # Example: Handling Missing Data (NaN values) & Dropping/Imputing:
+
+# import numpy as np
+
+# raw_data = {
+#     "Product": ["Laptop", "Mouse", "Keyboard", "Monitor", "Headphones"],
+#     "Price": [1200, 25, np.nan, 300, 80],
+#     "Stock": [15, np.nan, 50, 20, np.nan]
+# }
+
+# df_inventory = pd.DataFrame(raw_data)
+
+# print("\n--- Inventory with Missing Values ---")
+# print(df_inventory)
+
+# print("\n--- Missing Value Count ---")
+# print(df_inventory.isnull().sum())
+
+# # Fill missing Price with median and Stock with 0
+# df_inventory_filled = df_inventory.copy()
+# df_inventory_filled["Price"] = df_inventory_filled["Price"].fillna(df_inventory_filled["Price"].median())
+# df_inventory_filled["Stock"] = df_inventory_filled["Stock"].fillna(0)
+
+# print("\n--- Cleaned Inventory DataFrame ---")
+# print(df_inventory_filled)
+
