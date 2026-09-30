@@ -75,7 +75,7 @@ import pandas as pd
 
 # sales_data = {
 #     "Region": ["North", "South", "North", "West", "South", "West"],
-#     "Salesperson": ["Ali", "Sara", "Ahmed", "Fatima", "Bilal", "Arslan"],
+#     "Salesperson": ["Ali", "Sara", "Faizan", "Amna", "Bilal", "Arslan"],
 #     "Sales": [25000, 34000, 18000, 42000, 29000, 31000],
 #     "Units": [50, 70, 35, 90, 60, 65]
 # }
