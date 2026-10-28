@@ -17,7 +17,7 @@ import numpy as np
 
 # print(np.diag([1, 2, 3]))
 
-print(np.full((2, 3), 7))
+# print(np.full((2, 3), 7))
 
 
 
