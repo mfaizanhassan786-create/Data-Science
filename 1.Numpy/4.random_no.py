@@ -23,5 +23,8 @@ import numpy as np
 # squares_np = arr**2
 # end = time.time()
 # print("Vectorized time:", end - start)
+# print("Vectorized time:", end - start)
+
+
 
 
